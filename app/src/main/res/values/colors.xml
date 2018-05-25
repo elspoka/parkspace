@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--<color name="colorPrimary">#3F51B5</color>-->
+    <!--<color name="colorPrimaryDark">#303F9F</color>-->
+    <!--default-->
+
+    <color name="colorPrimary">#f2f2f2</color>
+    <color name="colorPrimaryDark">#dddddd</color>
+    <!--<color name="colorPrimaryDark">#d7caab</color>-->
+    <color name="listColor">#ffca4d</color>
+    <color name="colorAccent">#707070</color>
+    <color name="ref1">#c5cecf</color>
+    <color name="dialogButton">#FF4081</color>
+    <color name="switchColorEnabled">#ffffff</color>
+    <color name="iconsColor">#fafafa</color>
+    <color name="intro">#0099cc</color>
+    <color name="text">#19000000</color>
+    <color name="black_overlay">#66000000</color>
+    <color name="map_polyline">#FF005064</color>
+    <color name="preferencesBackground">#00668C</color>
+    <color name="preferencesBackgroundDark">#005271</color>
+</resources>

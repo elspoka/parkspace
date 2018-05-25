@@ -1,0 +1,89 @@
+<resources>
+            <style name="AppTheme.NoActionBar">
+            <item name="windowActionBar">false</item>
+            <item name="windowNoTitle">true</item>
+            <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+            <item name="android:statusBarColor">@android:color/transparent</item>
+        </style>
+
+
+
+    <style name="PreferencesTheme" parent="android:Theme.Material.Light">
+        <item name="android:textColor">#fafafa</item>
+        <item name="android:keyTextSize">22sp</item>
+        <item name="android:textColorPrimary">#fafafa</item>
+        <item name="android:textColorSecondary">#eaeaea</item>
+        <item name="android:actionBarSize">70dp</item>
+        <item name="android:windowBackground">@color/preferencesBackground</item>
+        <item name="android:colorPrimary">@color/preferencesBackground</item>
+        <item name="android:colorPrimaryDark">@color/preferencesBackground</item>
+        <item name="android:colorAccent">@color/switchColorEnabled</item>
+        <item name="android:dialogTheme">@style/DialogStyle</item>
+        <item name="android:alertDialogTheme">@style/DialogStyle</item>
+    </style>
+
+    <!-- Generic Dialog Theme -->
+    <!--<item name="android:textColorPrimary">#616161</item>-->
+    <!--<item name="android:textColor">#616161</item>-->
+    <style name="AppCompatDialog" >
+        <item name="colorControlActivated">@color/switchColorEnabled</item>
+        <!--parent="Theme.AppCompat.Dialog"-->
+        <!-- Used for the title and text -->
+
+        <!-- Used for the background -->
+        <item name="android:background">#f0f0f0</item>
+        <!-- Used for the buttons -->
+        <item name="colorAccent">@color/dialogButton</item>
+        <item name="colorControlHighlight">@color/dialogButton</item>
+
+        <item name="colorPrimary">@color/dialogButton</item>
+        <item name="colorPrimaryDark">@color/dialogButton</item>
+    </style>
+
+    <!-- Alert Dialog Theme -->
+    <!--<item name="android:textColor">#616161</item>-->
+    <!--<item name="android:textColorPrimary">#616161</item>-->
+    <style name="AppCompatAlert" >
+
+        <item name="colorControlActivated">@color/switchColorEnabled</item>
+        <!--parent="Theme.AppCompat.Dialog.Alert"-->
+
+        <!-- Used for the background -->
+        <item name="android:background">@color/preferencesBackground</item>
+        <!-- Used for the buttons -->
+        <item name="colorAccent">@color/dialogButton</item>
+        <item name="colorControlHighlight">@color/dialogButton</item>
+
+        <item name="colorPrimary">@color/dialogButton</item>
+        <item name="colorPrimaryDark">@color/dialogButton</item>
+    </style>
+
+    <style name="NavigationDrawerStyle">
+        <!--<item name="android:listDivider">@color/listColor</item>-->
+        <item name="android:divider">@drawable/list_divider</item>
+    </style>
+
+    <style name="SwitchTheme">
+        <!-- active thumb & track color (30% transparency) -->
+        <!--<item name="colorControlActivated">#46bdbf</item>-->
+        <item name="colorControlActivated">@color/switchColorEnabled</item>
+        <!-- inactive thumb color -->
+        <!--<item name="colorSwitchThumbNormal">#f1f1f1</item>-->
+
+        <!-- inactive track color (30% transparency) -->
+        <item name="android:colorForeground">#42221f1f
+        </item>
+    </style>
+
+    <style name="DialogStyle" parent="android:Theme.Material.Dialog.Alert">
+
+        <item name="android:textColor">#fafafa</item>
+        <item name="colorControlActivated">@color/switchColorEnabled</item>
+
+        <item name="android:textColorPrimary">#fafafa</item>
+        <item name="android:background">@color/preferencesBackground</item>
+        <item name="android:windowBackground">@color/preferencesBackground</item>
+        <item name="android:colorAccent">#fafafa</item>
+    </style>
+
+</resources>

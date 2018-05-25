@@ -1,0 +1,110 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <!-- Header aligned to top -->
+    <RelativeLayout
+        android:id="@+id/header0"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@color/intro"
+        android:gravity="center" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_margin="5dp"
+            android:text=""
+            android:textColor="#000"
+            android:textSize="20sp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_below="@+id/header0"
+    android:id="@+id/header"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    android:background="@color/intro"
+    android:gravity="center" >
+
+    <TextView
+        android:background="@color/text"
+        android:paddingLeft="50dp"
+        android:paddingRight="50dp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:text="Privacy Policy"
+    android:textColor="#282828"
+    android:textSize="20sp" />
+
+</RelativeLayout>
+
+
+    <ScrollView
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:layout_below="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/intro">
+
+        <TextView
+            android:background="@color/text"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/policy"/>
+
+
+
+    </ScrollView>
+
+    <!-- The primary full-screen view. This can be replaced with whatever view
+         is needed to present your content, e.g. VideoView, SurfaceView,
+         TextureView, etc. -->
+    <!--<TextView-->
+        <!--android:id="@+id/fullscreen_content"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:gravity="center"-->
+        <!--android:keepScreenOn="true"-->
+        <!--android:text="@string/dummy_content"-->
+        <!--android:textColor="#33b5e5"-->
+        <!--android:textSize="50sp"-->
+        <!--android:textStyle="bold" />-->
+
+    <!--&lt;!&ndash; This FrameLayout insets its children based on system windows using-->
+         <!--android:fitsSystemWindows. &ndash;&gt;-->
+    <!--<FrameLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:fitsSystemWindows="true">-->
+
+        <!--<LinearLayout-->
+            <!--android:id="@+id/fullscreen_content_controls"-->
+            <!--style="?metaButtonBarStyle"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_gravity="bottom|center_horizontal"-->
+            <!--android:background="@color/black_overlay"-->
+            <!--android:orientation="horizontal"-->
+            <!--tools:ignore="UselessParent">-->
+
+            <!--<Button-->
+                <!--android:id="@+id/dummy_button"-->
+                <!--style="?metaButtonBarButtonStyle"-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_weight="1"-->
+                <!--android:text="@string/dummy_button" />-->
+
+        <!--</LinearLayout>-->
+    <!--</FrameLayout>-->
+
+</RelativeLayout>

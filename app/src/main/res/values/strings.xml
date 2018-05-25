@@ -1,0 +1,171 @@
+<resources>
+    <string name="app_name">Parkspace</string>
+
+    <string name="title_activity_fullscreen">FullscreenActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="openDrawer">open_drawer</string>
+    <string name="closeDrawer">close_drawer</string>
+
+
+    <string name="shortcutShort">Share your parking spot</string>
+    <string name="shortcutShort2">Set parking reminder</string>
+    <!-- Navigation Drawer menu labels -->
+    <string name="nav_home">Map</string>
+    <string name="nav_share">Share parking spot</string>
+    <string name="nav_photos">Photos</string>
+    <string name="nav_movies">Movies</string>
+    <string name="nav_notifications">Notifications</string>
+    <string name="nav_settings">Settings</string>
+    <string name="nav_tutorial">How it works</string>
+    <string name="nav_about_us">About Us</string>
+    <string name="nav_parkversetag">Parkspace sticker</string>
+    <string name="nav_privacy_policy">Privacy policy</string>
+    <string name="nav_tickets">Tickets left</string>
+    <string name="nav_reminder">Parking reminder</string>
+
+    <string name="nav_sel2">Select 2</string>
+    <string name="nav_sel3">Select 3</string>
+
+    <!-- Toolbar titles when navigation menu item is selected -->
+    <string-array name="nav_item_activity_titles">
+        <item>Map</item>
+        <item>Photos</item>
+        <item>Movies</item>
+        <item>Notifications</item>
+        <item>Settings</item>
+    </string-array>
+
+    <string name="activity_title_about_us">About Us</string>
+    <string name="activity_title_privacy_policy">Privacy Policy</string>
+    <string name="action_clear_all">Clear All</string>
+    <string name="action_logout">Logout</string>
+    <string name="action_mark_all_read">Mark All as Read</string>
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="title_activity_settings">Settings</string>
+
+    <!-- Strings related to Settings -->
+
+    <!-- Example General settings -->
+    <string name="pref_header_general">General</string>
+
+    <string name="pref_title_social_recommendations">Enable social recommendations</string>
+    <string name="pref_description_social_recommendations">Recommendations for people to contact
+        based on your message history
+    </string>
+
+    <string name="pref_title_display_name">Display name</string>
+    <string name="pref_default_display_name">John Smith</string>
+
+    <string name="pref_title_add_friends_to_messages">Add friends to messages</string>
+    <string-array name="pref_example_list_titles">
+        <item>Always</item>
+        <item>When possible</item>
+        <item>Never</item>
+    </string-array>
+    <string-array name="pref_example_list_values">
+        <item>1</item>
+        <item>0</item>
+        <item>-1</item>
+    </string-array>
+
+    <!-- Example settings for Data & Sync -->
+    <string name="pref_header_data_sync">Data &amp; sync</string>
+
+    <string name="pref_title_sync_frequency">Sync frequency</string>
+    <string-array name="pref_sync_frequency_titles">
+        <item>15 minutes</item>
+        <item>30 minutes</item>
+        <item>1 hour</item>
+        <item>3 hours</item>
+        <item>6 hours</item>
+        <item>Never</item>
+    </string-array>
+    <string-array name="pref_sync_frequency_values">
+        <item>15</item>
+        <item>30</item>
+        <item>60</item>
+        <item>180</item>
+        <item>360</item>
+        <item>-1</item>
+    </string-array>
+
+    <string-array name="list_preference_entries">
+        <item>Entry 1</item>
+        <item>Entry 2</item>
+        <item>Entry 3</item>
+    </string-array>
+
+    <string-array name="list_preference_entry_values">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+
+    <string-array name="multi_select_list_preference_default_value" />
+
+    <string name="pref_title_system_sync_settings">System sync settings</string>
+
+    <!-- Example settings for Notifications -->
+    <string name="pref_header_notifications">Notifications</string>
+
+    <string name="pref_title_new_message_notifications">New message notifications</string>
+
+    <string name="pref_title_ringtone">Ringtone</string>
+    <string name="pref_ringtone_silent">Silent</string>
+
+    <string name="pref_title_vibrate">Vibrate</string>
+    <string name="app_intro">Parkspace</string>
+
+    <string name="title_activity_send_location">SendLocation</string>
+
+    <string name="title_activity_no_internet">NoInternetActivity</string>
+
+    <string name="title_activity_policy">PolicyActivity</string>
+
+    <string name="title_activity_no_tickets">NoTicketsActivity</string>
+
+    <string name="title_activity_show_tickets">ShowTicketsActivity</string>
+
+    <string name="policy">Parkspace app does not keep track of the user\'s position or share any information provided by the user to any third party contractors.\nThe app must be used by the user in such a way that safety is guaranteed while driving.\n
+        GENERAL\n
+This privacy policy is intended to give you confidence in the privacy and security of the personal information we obtain from you. However, please note that we are not responsible for any use of your personal information you provide to third-party applications or websites that may be accessed via the Products or Websites. We recommend that you review the privacy policy of any third-party applications or websites that you use.
+\n
+COLLECTION OF PERSONAL INFORMATION\n
+When you use our Products or Websites, you may be asked for personally identifiable information such as your name, address, date of birth, email address, telephone number.
+By giving us such information, you will need to consent to our using it in the manner described in this policy.
+You may withdraw your consent at any time by emailing us at crossroadsapplications@gmail.com. We will return or destroy your personal information within five days of receipt of your withdrawal of consent.
+Cookie information, pages you have requested and your IP address may also be recorded by us and/or third parties from your browser as set out in this policy.
+\n
+USE OF PERFORMANCE DATA\n
+Performance data, including performance statistics, bug fixes and other similar data (performance data) uploaded to our Websites or acquired through our Products may be used in any way, including, but not limited to, using, editing, altering, reproducing, publishing and/or distributing the Performance Data for any purpose, commercial or otherwise, provided that such Performance Data is stripped of all personally identifiable information.
+\n
+USE OF PERSONAL INFORMATION\n
+We use personal information to allow us to process your service requests, provide access to privileged areas of the Websites, send out newsletters, personalize your visit to our Websites, personalize your use of our Products, and enable us to improve the products and services we offer. We may occasionally carry out market research and send you details of services and offers that we think may be of interest to you. If you do not wish to receive such information, please e-mail crossroadsapplications@gmail.com or, alternatively, when we send you an e-mail, it will contain a provision for you to opt out of receiving any further information from us.
+\n
+DISCLOSURE OF PERSONAL INFORMATION\n
+We may provide information about you to our employees and agents in order to administer any accounts, products and services provided to you.
+We will not disclose your personal information to any third party unless you have consented to such disclosure or where we are required to do so by law. Should you breach our terms and conditions or terms of use or if we are under a duty to disclose or share your personal data in order to comply with any legal obligation, we may disclose your information to a relevant authority. This may include exchanging information with other companies and organizations for the purposes of fraud protection and credit risk reduction. Any disclosure of personal information will be strictly controlled and made fully in accordance with current U.S. law.
+\n
+COOKIES\n
+Cookies are small data files that a website you visit may save on your computer or handheld device that usually includes an anonymous unique identifier. Our Websites and those of our Products may use cookies for user authentication, keeping track of your preferences, promotional campaigns, tracking our audience size and traffic patterns, and in certain other cases. We may include small graphic images in our email messages and newsletters to determine whether the messages were opened and the links were viewed.
+Third-party advertisers may also create and access cookies, which will be subject to their privacy policies  we accept no responsibility or liability for the use of such third parties cookies. If you do not wish cookies to be placed on your PC or handheld device, then they can be disabled in your web browser. The option to do so is normally found in your browsers security settings section. Please note that permanently disabling cookies in your browser may hinder your use of our Websites as well as other websites and interactive services.
+\n
+SECURITY\n
+All security on our Websites is treated seriously. Where applicable, we undertake security steps, including use of SSL technology, on our back-end systems that store customer account information and to protect data transmissions. However, this is not a guarantee that such data transmissions cannot be accessed, altered or deleted due to firewall or other security software failures.
+If you have any further concerns about security, please email our Customer Service team at crossroadsapplications@gmail.com.
+\n
+POLICY CHANGES\n
+Changes in this policy will be posted on our Websites. You are advised to check our Websites regularly to view our most recent privacy policy.
+</string>
+
+    <string name="title_activity_reminder">ReminderActivity</string>
+
+    <string name="title_activity_select_share">SelectShareActivity</string>
+
+    <string name="title_activity_set_reminder_on_scan">SetReminderOnScanActivity</string>
+
+</resources>

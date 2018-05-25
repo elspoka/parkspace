@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="listArray">
+        <item>Show directions to closest parking spot</item>
+        <item>Disable directions</item>
+    </string-array>
+
+    <string-array name="listValues">
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+
+    <string-array name="listNfcActions">
+        <item>Share your parking spot when the Parkspace Sticker is scanned</item>
+        <item>Set a Parking Reminder to locate your car easily on your way back after scanning the sticker</item>
+        <item>Select preferred action after scanning</item>
+    </string-array>
+
+    <string-array name="listNfcValues">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+</resources>

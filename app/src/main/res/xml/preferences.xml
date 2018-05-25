@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    >
+    <!--<PreferenceCategory-->
+        <!--android:layout="@layout/settings_title_bar" />-->
+    <!--<EditTextPreference android:title="Your Name"-->
+        <!--android:key="username"-->
+        <!--android:summary="Please provide your username"></EditTextPreference>-->
+    <!--<CheckBoxPreference android:title="Application Updates"-->
+        <!--android:defaultValue="false"-->
+        <!--android:summary="This option if selected will allow the application to check for latest versions."-->
+        <!--android:key="applicationUpdates" />-->
+    <!--<PreferenceCategory-->
+        <!--android:-->
+    <!--/>-->
+    <Preference
+        android:icon="@drawable/nfc_vector"
+        android:key="parkspace.activateNFC"
+        android:summary="Click to open Nfc settings in your phone"
+        android:title="Activate Nfc">
+
+        <intent android:action="android.settings.NFC_SETTINGS"/>
+
+    </Preference>
+    <SwitchPreference
+        android:key="parkspace.onTheMove"
+        android:summary="Activate to get notified when a parking spot is available nearby"
+        android:theme="@style/SwitchTheme"
+        android:defaultValue="true"
+        android:title="Notifications"
+        android:icon="@drawable/notify_vector"
+        />
+    <ListPreference
+
+        android:title="Displayed directions"
+        android:icon="@drawable/ic_directions_black_24px"
+        android:summary="Activate of deactivate automatic directions to closest parking spot"
+        android:key="parkspace.directionsType"
+
+        android:defaultValue="1"
+        android:entries="@array/listArray"
+        android:entryValues="@array/listValues" />
+    <ListPreference
+
+        android:title="Select action after scanning the Parkspace Sticker"
+        android:icon="@drawable/select_vector"
+        android:summary="Choose to share your parking spot, set a parking reminder or to select your preferred action after scanning the Parkspace Sticker"
+        android:key="parkspace.nfcAction"
+
+        android:defaultValue="1"
+        android:entries="@array/listNfcActions"
+        android:entryValues="@array/listNfcValues" />
+
+    <SwitchPreference
+        android:key="parkspace.trafficPreference"
+        android:summary="Show or hide traffic information on map"
+        android:theme="@style/SwitchTheme"
+        android:defaultValue="true"
+        android:title="Traffic info"
+        android:icon="@drawable/traffic_vector"
+
+
+        />
+    <SwitchPreference
+        android:key="parkspace.centerMap"
+        android:summary="Center the map to your location automatically"
+        android:theme="@style/SwitchTheme"
+        android:defaultValue="false"
+        android:title="Center map automatically"
+        android:icon="@drawable/location_vector"
+
+
+        />
+    <SwitchPreference
+        android:key="parkspace.seek"
+        android:summary="Activate or deactivate the seekbar in order to change the map tilt"
+        android:theme="@style/SwitchTheme"
+        android:defaultValue="false"
+        android:title="Control map tilt"
+        android:icon="@drawable/tune_vector"
+
+
+        />
+
+
+    <!--<Preference-->
+        <!--android:key="parkverse.ActivateNfc"-->
+        <!--android:title="Activate Nfc"-->
+        <!--android:summary="Click to open Nfc settings in your phone"/>-->
+
+
+
+    <SwitchPreference
+        android:key="parkspace.style"
+        android:summary="Select day or night mode map"
+        android:theme="@style/SwitchTheme"
+        android:defaultValue="false"
+        android:title="Choose map style"
+        android:icon="@drawable/map_vector"
+        />
+    <SwitchPreference
+        android:key="parkspace.mapRotate"
+        android:summary="When compass mode is activated the map rotates according to your direction automatically"
+        android:theme="@style/SwitchTheme"
+        android:defaultValue="false"
+        android:title="Compass mode"
+        android:icon="@drawable/map_rotate_direction"
+        />
+
+
+
+    <!--<SwitchPreference-->
+        <!--android:title="Display directions automatically"-->
+        <!--android:key="directionsAuto"/>-->
+</PreferenceScreen>

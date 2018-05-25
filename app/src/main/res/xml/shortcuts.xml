@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shortcuts xmlns:android="http://schemas.android.com/apk/res/android">
+    <shortcut
+        android:enabled="true"
+        android:icon="@drawable/explore_vector"
+
+        android:shortcutId="static2"
+
+        android:shortcutShortLabel="@string/shortcutShort2">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:targetClass="tech.crossroads.parkspace.SetReminderOnScanActivity"
+            android:targetPackage="tech.crossroads.parkspace" />
+    </shortcut>
+    <shortcut
+        android:enabled="true"
+        android:icon="@drawable/share_shortcut"
+
+        android:shortcutId="static"
+
+        android:shortcutShortLabel="@string/shortcutShort">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:targetClass="tech.crossroads.parkspace.SendLocation"
+            android:targetPackage="tech.crossroads.parkspace" />
+    </shortcut>
+
+</shortcuts>
+    <!--android:shortcutLongLabel="@string/static_shortcut_long_label"-->

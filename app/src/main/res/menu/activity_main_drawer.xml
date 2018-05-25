@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group  android:id="@+id/group_item_1"
+            android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_home_white_24dp"
+            android:title="@string/nav_home" />
+
+    </group>
+    <group  android:id="@+id/group_item_2"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_share"
+            android:icon="@drawable/share_shortcut"
+            android:title="@string/nav_share" />
+
+    </group>
+    <group  android:id="@+id/group_item_8"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_reminder"
+            android:icon="@drawable/explore_vector"
+            android:title="@string/nav_reminder" />
+    </group>
+        <!--<item-->
+            <!--android:id="@+id/nav_photos"-->
+            <!--android:icon="@drawable/ic_photo_library_black_24dp"-->
+            <!--android:title="@string/nav_sel2" />-->
+        <!--<item-->
+            <!--android:id="@+id/nav_movies"-->
+            <!--android:icon="@drawable/ic_local_movies_black_24dp"-->
+            <!--android:title="@string/nav_sel3" />-->
+
+        <!--<item-->
+            <!--android:id="@+id/nav_notifications"-->
+            <!--android:icon="@drawable/ic_notifications_black_24dp"-->
+            <!--android:title="@string/nav_notifications" />-->
+    <group  android:id="@+id/group_item_3"
+            android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_settings"
+            android:icon="@drawable/ic_settings_black_24px"
+            android:title="@string/nav_settings" />
+    </group>
+
+    <group  android:id="@+id/group_item_4"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_tutorial"
+            android:icon="@drawable/ic_info_black_24dp_vector"
+            android:title="@string/nav_tutorial" />
+    </group>
+
+    <group  android:id="@+id/group_item_5"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_parkversetag"
+            android:icon="@drawable/web_site_icon"
+            android:title="@string/nav_parkversetag" />
+    </group>
+
+    <group  android:id="@+id/group_item_6"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_tickets"
+            android:icon="@drawable/tickets_vector"
+            android:title="@string/nav_tickets" />
+    </group>
+
+    <group  android:id="@+id/group_item_7"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_privacypolicy"
+            android:icon="@drawable/privacy_policy"
+            android:title="@string/nav_privacy_policy" />
+    </group>
+
+
+    <!--<group android:checkableBehavior="single">-->
+        <!--<item-->
+            <!--android:id="@+id/nav_home"-->
+            <!--android:icon="@drawable/ic_home_black_24dp"-->
+            <!--android:title="@string/nav_home" />-->
+        <!--<item-->
+            <!--android:id="@+id/nav_photos"-->
+            <!--android:icon="@drawable/ic_photo_library_black_24dp"-->
+            <!--android:title="@string/nav_sel2" />-->
+        <!--<item-->
+            <!--android:id="@+id/nav_movies"-->
+            <!--android:icon="@drawable/ic_local_movies_black_24dp"-->
+            <!--android:title="@string/nav_sel3" />-->
+
+        <!--<item-->
+            <!--android:id="@+id/nav_notifications"-->
+            <!--android:icon="@drawable/ic_notifications_black_24dp"-->
+            <!--android:title="@string/nav_notifications" />-->
+
+        <!--<item-->
+            <!--android:id="@+id/nav_settings"-->
+            <!--android:icon="@drawable/ic_settings_black_24dp"-->
+            <!--android:title="@string/nav_settings" />-->
+    <!--</group>-->
+
+    <!--<item android:title="Other">-->
+        <!--<menu>-->
+            <!--<item-->
+                <!--android:id="@+id/nav_about_us"-->
+                <!--android:icon="@drawable/ic_local_movies_black_24dp"-->
+                <!--android:title="@string/nav_about_us" />-->
+            <!--<item-->
+                <!--android:id="@+id/nav_privacy_policy"-->
+                <!--android:title="@string/privacy_policy" />-->
+        <!--</menu>-->
+    <!--</item>-->
+
+</menu>

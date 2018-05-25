@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/Reminder_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+
+    >
+
+    <LinearLayout
+        android:id="@+id/ReminderlinearLayoutActivity"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <RelativeLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.1">
+            <!--0.8-->
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/bannerback4"
+                android:scaleType="centerCrop"/>
+
+            <LinearLayout
+
+                android:id="@+id/RemindertopBanner"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+
+
+                <!--android:background="#e9e1ce"-->
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:id="@+id/ReminderstatusBarLinear"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1">
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ReminderParkversePlusMenu"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1.6">
+
+
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="3.5"
+                        android:layout_height="match_parent">
+                    </LinearLayout>
+
+
+                    <ImageView
+                        android:id="@+id/ReminderparkverseBanner"
+                        android:paddingTop="3dp"
+                        android:paddingBottom="3dp"
+                        android:layout_width="0dp"
+                        android:layout_weight="20"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/parkspace_600"
+                        />
+
+
+                    <!--<LinearLayout-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_gravity="center"-->
+                        <!--android:layout_weight="3.5"-->
+                        <!--android:id="@+id/ReminderlinearImageMenu">-->
+
+                        <!--<LinearLayout-->
+                            <!--android:layout_width="0dp"-->
+                            <!--android:layout_weight="1"-->
+                            <!--android:layout_height="match_parent">-->
+
+                        <!--</LinearLayout>-->
+
+                        <!--<ImageView-->
+                            <!--android:id="@+id/RemindermenuButton"-->
+                            <!--android:layout_width="0dp"-->
+
+                            <!--android:layout_weight="1.5"-->
+                            <!--android:paddingTop="20dp"-->
+                            <!--android:layout_gravity="center"-->
+                            <!--android:layout_height="match_parent"-->
+                            <!--android:background="@drawable/ic_menu"/>-->
+
+                        <!--<LinearLayout-->
+                            <!--android:layout_width="0dp"-->
+                            <!--android:layout_weight="1"-->
+                            <!--android:layout_height="match_parent">-->
+
+                        <!--</LinearLayout>-->
+
+                    <!--</LinearLayout>-->
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="3.5"
+                        android:layout_height="match_parent">
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/Reminderlinear002"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:background="#bdbdbd"
+            android:layout_weight="0.02"
+            >
+            <!--android:background="#eeeeee"-->
+        </LinearLayout>
+
+        <!--<include-->
+        <!--layout="@layout/app_bar_main"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="0dp"-->
+        <!--android:layout_weight='1'        />-->
+
+        <!--<include-->
+        <!--layout="@layout/activity"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent" />-->
+
+
+
+        <LinearLayout
+            android:background="#E9E1CE"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight='10'
+            >
+
+            <!--<LinearLayout-->
+
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:background="#E9E1CE"-->
+            <!--android:layout_weight="0"-->
+            <!--&gt;-->
+            <!--</LinearLayout>-->
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <fragment
+                    android:id="@+id/reminderMap"
+                    xmlns:tools="http://schemas.android.com/tools"
+                    class="com.google.android.gms.maps.SupportMapFragment"
+                    xmlns:android="http://schemas.android.com/apk/res/android"
+
+
+                    android:layout_width="match_parent"
+
+                    android:layout_height="match_parent"
+
+
+                    />
+
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_weight="26"-->
+                <!--android:layout_height="match_parent"-->
+
+                <!--<ImageView-->
+                <!--android:id="@+id/blur_view"-->
+                <!--android:visibility="visible"-->
+                <!--android:src="@drawable/thessalonikimapblur2"-->
+                <!--android:scaleType="centerCrop"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="match_parent"/>-->
+
+                <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="View Map"-->
+                <!--android:layout_centerInParent="true"/>-->
+
+            </RelativeLayout>
+
+            <!--<LinearLayout-->
+
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:background="#E9E1CE"-->
+            <!--android:layout_weight="0"-->
+            <!--&gt;-->
+            <!--</LinearLayout>-->
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:background="#bdbdbd"
+            android:layout_weight="0.03"
+            >
+
+            <!--android:background="#eeeeee"-->
+        </LinearLayout>
+
+
+
+        <RelativeLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.7">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/bannerback4"
+                android:scaleType="centerCrop"/>
+
+
+
+            <LinearLayout
+                android:id="@+id/ReminderbottomButtons"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                >
+                <!--android:background="#dfd2af"-->
+
+
+
+                <LinearLayout
+                    android:id="@+id/reminderLinearLayoutBottomButtonSave"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <!--<ImageView-->
+                        <!--android:id="@+id/ReminderbottomBarImage1"-->
+                        <!--android:layout_weight="1"-->
+                        <!--android:layout_width="0dp"-->
+                        <!--android:layout_height="match_parent"-->
+                        <!--android:padding="7dp"-->
+                        <!--android:src="@drawable/one_shadow_re"/>-->
+
+                    <!--&lt;!&ndash;<LinearLayout&ndash;&gt;-->
+                    <!--&lt;!&ndash;android:layout_width="0dp"&ndash;&gt;-->
+                    <!--&lt;!&ndash;android:background="#eeeeee"&ndash;&gt;-->
+                    <!--&lt;!&ndash;android:layout_height="match_parent"&ndash;&gt;-->
+                    <!--&lt;!&ndash;android:layout_weight="0.01">&ndash;&gt;-->
+
+                    <!--&lt;!&ndash;</LinearLayout>&ndash;&gt;-->
+                    <!--&lt;!&ndash;<LinearLayout&ndash;&gt;-->
+                    <!--&lt;!&ndash;android:layout_width="0dp"&ndash;&gt;-->
+                    <!--&lt;!&ndash;android:background="#1e000000"&ndash;&gt;-->
+                    <!--&lt;!&ndash;android:layout_height="match_parent"&ndash;&gt;-->
+                    <!--&lt;!&ndash;android:layout_weight="0.01">&ndash;&gt;-->
+
+                    <!--&lt;!&ndash;</LinearLayout>&ndash;&gt;-->
+
+                    <!--<ImageView-->
+                        <!--android:id="@+id/ReminderbottomBarImage2"-->
+                        <!--android:layout_weight="1"-->
+                        <!--android:layout_width="0dp"-->
+                        <!--android:layout_height="match_parent"-->
+                        <!--android:padding="7dp"-->
+                        <!--android:src="@drawable/business"/>-->
+
+                    <!--&lt;!&ndash;<LinearLayout&ndash;&gt;-->
+                    <!--&lt;!&ndash;android:layout_width="0dp"&ndash;&gt;-->
+                    <!--&lt;!&ndash;android:background="#eeeeee"&ndash;&gt;-->
+                    <!--&lt;!&ndash;android:layout_height="match_parent"&ndash;&gt;-->
+                    <!--&lt;!&ndash;android:layout_weight="0.01">&ndash;&gt;-->
+
+                    <!--&lt;!&ndash;</LinearLayout>&ndash;&gt;-->
+
+                    <!--<ImageView-->
+                        <!--android:id="@+id/ReminderbottomBarImage3"-->
+                        <!--android:layout_weight="1"-->
+                        <!--android:layout_width="0dp"-->
+                        <!--android:layout_height="match_parent"-->
+                        <!--android:padding="7dp"-->
+                        <!--android:src="@drawable/free_spaces"/>-->
+
+                    <ImageView
+                        android:background="?selectableItemBackgroundBorderless"
+                        android:id="@+id/imageViewReminder"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:paddingLeft="20dp"
+                        android:paddingRight="20dp"
+                        android:src="@drawable/reminderclick"/>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <!--<com.roughike.bottombar.BottomBar-->
+        <!--android:id="@+id/bottomBar"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="60dp"-->
+        <!--android:layout_alignParentBottom="true"-->
+
+
+        <!--app:bb_tabXmlResource="@xml/bottombar_tabs" />-->
+
+    </LinearLayout>
+
+
+
+
+
+</RelativeLayout>

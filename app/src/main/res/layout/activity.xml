@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    tools:context="gr.test.testmap.MainActivity">
+
+    <!--android:paddingBottom="@dimen/activity_vertical_margin"-->
+    <!--android:paddingLeft="@dimen/activity_horizontal_margin"-->
+    <!--android:paddingRight="@dimen/activity_horizontal_margin"-->
+    <!--android:paddingTop="@dimen/activity_vertical_margin"-->
+    <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="Hello World!" />-->
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="24dp">
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#50636363">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:src="@drawable/parkversebunner"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/main_selector"
+        >
+
+    <!--<ImageView-->
+        <!--android:layout_width="0dp"-->
+        <!--android:layout_weight="3"-->
+        <!--android:layout_height="50dp"-->
+        <!--android:src="@drawable/parkfinder"-->
+         <!--/>-->
+
+
+
+        <fragment
+            android:id="@+id/map"
+            xmlns:tools="http://schemas.android.com/tools"
+            class="com.google.android.gms.maps.SupportMapFragment"
+            xmlns:android="http://schemas.android.com/apk/res/android"
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            />
+
+        <!--<Switch-->
+            <!--android:switchMinWidth="60dp"-->
+            <!--android:id="@+id/switch0"-->
+            <!--android:layout_alignParentRight="true"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:gravity="center|end"-->
+
+            <!--android:text="Autosend: "-->
+            <!--android:background="#8ccfd8dc" />-->
+
+        <!--<TextView-->
+            <!--android:layout_toLeftOf="@+id/switch0"-->
+            <!--android:layout_alignBottom="@+id/switch0"-->
+            <!--android:gravity="center"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:text="Parkfinder"-->
+            <!--android:textStyle="bold|italic"-->
+            <!--android:background="#8ccfd8dc"/>-->
+
+<!--<LinearLayout-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:weightSum="1"-->
+    <!--android:layout_height="100dp"-->
+    <!--android:orientation="horizontal"-->
+    <!--android:layout_alignParentBottom="true">-->
+
+    <!--<LinearLayout-->
+        <!--android:layout_width="0dp"-->
+        <!--android:layout_weight="0.5"-->
+        <!--android:layout_height="wrap_content">-->
+
+        <!--<ImageView-->
+            <!--android:id="@+id/zoomb1"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:src="@drawable/zoom">-->
+        <!--</ImageView>-->
+
+    <!--</LinearLayout>-->
+
+
+    <!--<LinearLayout-->
+    <!--android:layout_width="0dp"-->
+        <!--android:orientation="horizontal"-->
+    <!--android:layout_weight="0.5"-->
+    <!--android:layout_height="match_parent">-->
+
+        <!--<ImageView-->
+        <!--android:id="@+id/zoomb2"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:src="@drawable/zoom">-->
+        <!--</ImageView>-->
+
+<!--</LinearLayout>-->
+
+    <!--&lt;!&ndash;&ndash;&gt;-->
+    <!--&lt;!&ndash;<ImageView&ndash;&gt;-->
+        <!--&lt;!&ndash;android:id="@+id/zoomb1"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_width="70dp"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:src="@drawable/zoom"/>&ndash;&gt;-->
+    <!--&lt;!&ndash;&ndash;&gt;-->
+    <!--&lt;!&ndash;&ndash;&gt;-->
+    <!--&lt;!&ndash;<ImageView&ndash;&gt;-->
+        <!--&lt;!&ndash;android:id="@+id/zoomb2"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_width="70dp"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:src="@drawable/zoom"/>&ndash;&gt;-->
+
+<!--</LinearLayout>-->
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>

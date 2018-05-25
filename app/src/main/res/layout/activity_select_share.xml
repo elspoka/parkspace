@@ -1,0 +1,110 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0099cc"
+    tools:context="tech.crossroads.parkspace.SelectShareActivity">
+
+    <!-- The primary full-screen view. This can be replaced with whatever view
+         is needed to present your content, e.g. VideoView, SurfaceView,
+         TextureView, etc. -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+
+        android:layout_weight="1.5">
+
+
+        <ImageView
+            android:layout_above="@+id/textViewSelectShare"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="150dp"
+            android:paddingBottom="20dp"
+            android:src="@drawable/logo10"
+            android:id="@+id/imageViewSelectShare"
+            />
+
+        <TextView
+
+            android:id="@+id/textViewSelectShare"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:gravity="center"
+            android:keepScreenOn="true"
+            android:text="Share spot or set reminder?"
+            android:textColor="#c0f2ff"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:paddingBottom="100dp"
+            />
+
+    </RelativeLayout>
+
+    <!-- This FrameLayout insets its children based on system windows using
+         android:fitsSystemWindows. -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.01"
+        android:background="#86c2ff">
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/relativeLayoutShare"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            >
+
+            <TextView
+                android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Share parking spot"
+                android:gravity="center"
+                android:textSize="18sp"
+                android:textColor="#c0f2ff"
+                android:textStyle="bold"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.01"
+            android:background="#86c2ff"></RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relativeLayoutSetReminder"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            >
+
+            <TextView
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#c0f2ff"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="Set parking reminder"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
