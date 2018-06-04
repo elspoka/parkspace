@@ -973,7 +973,7 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
 
 
     public void loginUserAndGetProperties() {
-        Backendless.UserService.login("a@b.g", "1234", new AsyncCallback<BackendlessUser>() {
+        Backendless.UserService.login("user", "pass", new AsyncCallback<BackendlessUser>() {
             @Override
             public void handleResponse(BackendlessUser loggedUser) {
                 //Toast.makeText( MainActivity.this, "User has been logged in: " + loggedUser, Toast.LENGTH_SHORT ).show();
@@ -1024,7 +1024,7 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
                     Backendless.Geo.getPoints(geoQuery, new AsyncCallback<BackendlessCollection<GeoPoint>>() {
                         @Override
                         public void handleResponse(BackendlessCollection<GeoPoint> points) {
-                            //Toast.makeText(MainActivity.this, String.valueOf(points.getTotalObjects()), Toast.LENGTH_SHORT).show();
+                           
                             //points.getCurrentPage().get(0).toString();
 
                             Iterator<GeoPoint> iterator = points.getCurrentPage().iterator();
@@ -1040,7 +1040,7 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
                                 tag = String.valueOf(geo.getMetadata("tag"));
 
                                 // if (metadata != null) {
-                                //Toast.makeText(MainActivity.this, metadata,Toast.LENGTH_SHORT).show();}
+                                
 
                                 // if (metadata.contains("busin")) {
                                 // mMap.addMarker(new MarkerOptions().position(new LatLng(geo.getLatitude(), geo.getLongitude())).icon(BitmapDescriptorFactory.fromResource(R.drawable.one_shadow_re))).setTitle(tag);
@@ -1053,7 +1053,7 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
                                 //mMap.addMarker(new MarkerOptions().position(new LatLng(geo.getLatitude(), geo.getLongitude())).icon(BitmapDescriptorFactory.fromResource(R.drawable.one_shadow_re)));
                                 // }
                                 // }
-                                // Toast.makeText(MainActivity.this,String.valueOf(geo.getLongitude()),Toast.LENGTH_SHORT).show();
+                                
                             }
 
 
@@ -1105,26 +1105,7 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
                 switch (resultCode) {
                     case Activity.RESULT_OK: {
                         // All required changes were successfully made
-                        //Toast.makeText(SendLocation.this, "Location enabled by user!", Toast.LENGTH_LONG).show();
-
-//                        if (ActivityCompat.checkSelfPermission(SendLocation.this, android.Manifest.permission.ACCESS_FINE_LOCATION) == PackageManager.PERMISSION_GRANTED) {
-//                            if (LocationServices.FusedLocationApi.getLastLocation(googleApiClient) != null) {
-//                                lastLocation = LocationServices.FusedLocationApi.getLastLocation(googleApiClient);
-//                                Toast.makeText(SendLocation.this, "got location", Toast.LENGTH_SHORT).show();
-//
-//                                if (isOnline()) {
-//
-//
-//                                    loginUserAndSavePoint();
-//                                    //Map map =Backendless.Persistence.of( "ServerTime" ).findById( "5CFA9FB2-DA4A-C033-FFF2-16FFED54C700" );
-//
-//                                }
-//                                ////////////////
-//                                //readyLocation();
-//                                //MarkerOptions mo=new MarkerOptions().icon(BitmapDescriptorFactory.fromResource(R.drawable.position)).position(new LatLng(lastLocation.getLatitude(),lastLocation.getLongitude())).rotation(bearing).anchor(0.5f,0.5f);
-//                                //Marker mark= mMap.addMarker(mo);
-//                            }
-//                        }
+                        
 
                         new WaitForLocationAsync().execute();
 
@@ -1312,102 +1293,10 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
         }
 
 
-//        if(location2!=null) {
-//            searchlat = location2.getLatitude();
-//            searchlong = location2.getLongitude();
-//            new LoadLocation().execute();
-//        }
-//        //new Thread(new GetContent()).start();
-//        if(location2!=null) {
-//
-//            latitude = location2.getLatitude();//40.74;//
-//            longitude = location2.getLongitude();//-73.98;//-73.98;
-//
-//
-//        }
-//        else
-//        {
-//            latitude = 0;//40.74;//
-//            longitude =0;
-//
-//        }
-//
-//        searchlat = location2.getLatitude();//40.74;//
-//        searchlong = location2.getLongitude();//-73.98;//-73.98;
-//        //places[0]="bar";
-//        //new LoadPlaces().execute();
-//
-//
-//
-//    //catch (Exception e){}
-//    Geocoder geocoder2 = new Geocoder(this, Locale.getDefault());
-//
-//
-//
-//////
-//    try {
-//        List<Address> addresses = geocoder2.getFromLocation(latitude, longitude, 1);
-//        //cityName = addresses.get(0).getAddressLine(1);
-//        countryCode = addresses.get(0).getCountryCode().toLowerCase();
-//        //countryCode=countryCode.toLowerCase();
-//
-////            if(addresses.get(0).getAdminArea()==null)
-////            {adminName = addresses.get(0).getPremises().toLowerCase();}
-////            else
-////            {adminName = addresses.get(0).getAdminArea().toLowerCase();}
-//        //adminName = addresses.get(0).getSubAdminArea();
-//        //adminName=adminName.toLowerCase();
-//
-//        adminName = "thessaloniki";
-//
-//        cityName = addresses.get(0).getLocality().toLowerCase();
-//
-//        //cityName=cityName.toLowerCase();
-//        //cityName = addresses.get(0).getAddressLine(0).split(" ");
-//        //////////////////////////////////////////////////////////////
-//        String[] parts = addresses.get(0).getAddressLine(0).split(" ");
-//        streetName=parts[0];
-//        if (!isNumeric(parts[1])){streetName=streetName+" "+parts[1];}
-//        //////////////////////////
-//        textc = (TextView) findViewById(R.id.v0);
-//        if(streetName==null)
-//        {textc.setText("No address");}
-//        else {
-//            // textc.setTypeface(typeFace);
-//            textc.setText(streetName);
-//        }
-//        //////////////////////////////////////
-//        streetName=streetName.toLowerCase();
-//
-//        // streetName=streetName.toLowerCase();
-//        //currentLocation = getCurrentLocationViaJSON(latitude, longitude);
-//
-//        //currentLocation =
-//
-//        //String stateName = addresses.get(0).getAddressLine(1);
-//        //String countryName = addresses.get(0).getAddressLine(2);
-//
-//    }
-//    catch (IOException e) {
-//        e.printStackTrace();
-//    }
-
-        //////////////////////////////////////////////////////////////////////////////////////////////
-        // LocationServices.FusedLocationApi.requestLocationUpdates(googleApiClient, locationRequest, MainActivity.this);
-
-////////////////////////////////////////////////////////////////////////////////////////////////////
-
-        // if (mRequestingLocationUpdates) {
-        //startLocationUpdates();
-        //}
 
     }
 
-//    protected void startLocationUpdates() {
-//        if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) == PackageManager.PERMISSION_GRANTED) {
-//            LocationServices.FusedLocationApi.requestLocationUpdates(googleApiClient, locationRequest, (com.google.android.gms.location.LocationListener) this);
-//        }
-//    }
+
 
     public void saveNewPoint() {
         HashMap point = new HashMap();
@@ -1738,18 +1627,6 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
 
         //seekBar.setMax(60);
 
-
-//        if(Build.VERSION.SDK_INT >=25) {
-//
-//            ShortcutManager shortcutManager = getSystemService(ShortcutManager.class);
-//            ShortcutInfo shortcut = new ShortcutInfo.Builder(this, "cartId")
-//                    .setShortLabel("Notifications")
-//                    .setLongLabel("Activate or deactivate notifications")
-//                    .setIcon(Icon.createWithResource(this, R.drawable.one_shadow_re))
-//                    .setIntent(new Intent(this, MainActivity.class))
-//                    .build();
-//            shortcutManager.setDynamicShortcuts(Arrays.asList(shortcut));
-//        }
 
 
 
@@ -2407,123 +2284,7 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
 
 
         String appVersion = "v1";
-        Backendless.initApp(this, "B6A58452-911E-9A94-FF35-FF8ED63D1000", "4390E5FD-A1DE-1126-FFA9-0964FE46C000", appVersion);
-
-        //final Handler h = new Handler();
-        //final int delay = 10000; //milliseconds
-//        h.postDelayed(new Runnable() {
-//            public void run() {
-//                //do something
-//                //if(mapMoved)
-//
-//                SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(MainActivity.this);
-//                String directionsStatus=prefs.getString("directionsType", "1");
-//                int value=0;
-//                value=Integer.valueOf(directionsStatus);
-//                //Toast.makeText(MainActivity.this, red,Toast.LENGTH_SHORT).show();
-//
-//                loadData();
-//                clearMap();
-//                //currentTime = (int) System.currentTimeMillis();
-//
-//                {
-//                    for (MarkerOptions markeropt : mMarkerOptArray) {
-//
-//                        updateMap(markeropt);
-//                        // markeropt.setVisible(false);
-//                        //Marker marker =  mMap.addMarker(markeropt);
-//                        //marker.remove(); //<-- works too!
-//                    }
-//                    //mapMoved = false;
-//                }
-//
-//                showBack();
-//
-//                if(sortList.size()>1) {
-//                    Object[] a = sortList.entrySet().toArray();
-//                    Arrays.sort(a, new Comparator() {
-//                        public int compare(Object o1, Object o2) {
-//                            return ((Map.Entry<LatLng, Integer>) o2).getValue()
-//                                    .compareTo(((Map.Entry<LatLng, Integer>) o1).getValue());
-//                        }
-//                    });
-//
-//
-////                for (Object e : a) {
-////                   // System.out.println(((Map.Entry<String, Integer>) e).getKey() + " : "
-////                           // ..+
-////                                    Toast.makeText(MainActivity.this, String.valueOf(((Map.Entry<LatLng, Integer>) e).getKey()),Toast.LENGTH_SHORT).show();
-////                }
-//
-//                    //Toast.makeText(MainActivity.this, String.valueOf(((Map.Entry<LatLng, Integer>) a[a.length - 1]).getKey()), Toast.LENGTH_SHORT).show();
-//                    /////////////////////////////////////////////////////////////////////////////////
-//
-//                    SharedPreferences sharedPref = MainActivity.this.getPreferences(Context.MODE_PRIVATE);
-//                    //int defaultValue = getResources().getInteger(R.string.saved_high_score_default);
-//                    boolean savedStatus = sharedPref.getBoolean("parkverse_status", true);
-//
-//                    LatLng directionsDestination = ( (Map.Entry<LatLng, Integer>) a[a.length - 1]).getKey();
-//
-//                    if(value<3) {
-//                        String output = "json";
-//                        String url = "https://maps.googleapis.com/maps/api/directions/"
-//                                + output + "?" + "origin=" + lastLocation.getLatitude() + "," + lastLocation.getLongitude() + "&destination=" + directionsDestination.latitude + "," + directionsDestination.longitude + "&key=AIzaSyALyxTBvX1YaD9ZJerQQb_mvnP-OP8xu0E";
-//
-//                        //String url = getMapsApiDirectionsUrl();
-//                        ReadTask downloadTask = new ReadTask();
-//                        downloadTask.execute(url);
-//                    }
-//                    /////////////////////////////////////////////////////////////////////////////////
-//                //LatLng latlong = ((Map.Entry<LatLng, Integer>) a[a.length-1]).getKey();
-//                }
-////                String output = "json";
-////                String url = "https://maps.googleapis.com/maps/api/directions/"
-////                        + output + "?" + "origin=" + lastLocation.getLatitude() + "," + lastLocation.getLongitude() + "&destination=" + latlong.latitude + "," + latlong.longitude + "&key=AIzaSyALyxTBvX1YaD9ZJerQQb_mvnP-OP8xu0E";
-////
-////                //String url = getMapsApiDirectionsUrl();
-////                ReadTask downloadTask = new ReadTask();
-////                downloadTask.execute(url);
-//
-//                sortList.clear();
-//
-//                ////////////
-//                //Object myKey = sortHashMapByValuesD(sortList).keySet().toArray()[0];
-//                //LatLng latlong= sortHashMapByValuesD(sortList).values().toArray()[0]
-//
-//                //Map.Entry<LatLng, Double> entry = sortHashMapByValuesD(sortList).entrySet().iterator().next();
-//
-////                String output = "json";
-////                String url = "https://maps.googleapis.com/maps/api/directions/"
-////                        + output + "?" + "origin=" + lastLocation.getLatitude() + "," + lastLocation.getLongitude() + "&destination=" + marker.getPosition().latitude + "," + marker.getPosition().longitude + "&key=AIzaSyALyxTBvX1YaD9ZJerQQb_mvnP-OP8xu0E";
-////
-////                //String url = getMapsApiDirectionsUrl();
-////                ReadTask downloadTask = new ReadTask();
-////                downloadTask.execute(url);
-////////////////////////////////////
-//
-//
-//
-//                h.postDelayed(this, delay);
-//            }
-//
-//        }, delay);
-
-
-
-        //h.postDelayed(runnable,delay);
-
-
-//        mMap.setOnCameraMoveListener(new GoogleMap.OnCameraMoveListener() {
-//            @Override
-//            public void onCameraMove() {
-//                CameraPosition cameraPosition = mMap.getCameraPosition();
-////                if(cameraPosition.zoom > 18.0) {
-////                    googleMap.setMapType(GoogleMap.MAP_TYPE_HYBRID);
-////                } else {
-////                    googleMap.setMapType(GoogleMap.MAP_TYPE_NORMAL);
-////                }
-//            }
-//        });
+        Backendless.initApp(this, "B6A58452-911E-9A94-FF35-xxxxxxxxxxxxxxx", "4390E5FD-A1DE-1126-FFA9-xxxxxxxxxxxxxx", appVersion);
 
 
         //   loginUserAndGetProperties();
@@ -2780,7 +2541,7 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
                 if (value == 1) {
                     String output = "json";
                     String url = "https://maps.googleapis.com/maps/api/directions/"
-                            + output + "?" + "origin=" + lastLocation.getLatitude() + "," + lastLocation.getLongitude() + "&destination=" + directionsDestination.latitude + "," + directionsDestination.longitude + "&key=AIzaSyALyxTBvX1YaD9ZJerQQb_mvnP-OP8xu0E";
+                            + output + "?" + "origin=" + lastLocation.getLatitude() + "," + lastLocation.getLongitude() + "&destination=" + directionsDestination.latitude + "," + directionsDestination.longitude + "&key=AIzaxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx";
 
                     //String url = getMapsApiDirectionsUrl();
                     if ( isOnline() && ( (distanceFrom(lastLocation.getLatitude(), lastLocation.getLongitude(), directionsDestination.latitude,directionsDestination.longitude))<distanceToShowDirections) ) {
@@ -3728,7 +3489,7 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
         //String params = waypoints + "&" + sensor;
         String output = "json";
         String url = "https://maps.googleapis.com/maps/api/directions/"
-                + output + "?" + "origin=" + lastLocation.getLatitude() + "," + lastLocation.getLongitude() + "&destination=";//+RouteActivity.getRouteFinishLat()+","+RouteActivity.getRouteFinishLong()+"&key=AIzaSyALyxTBvX1YaD9ZJerQQb_mvnP-OP8xu0E";
+                + output + "?" + "origin=" + lastLocation.getLatitude() + "," + lastLocation.getLongitude() + "&destination=";//+RouteActivity.getRouteFinishLat()+","+RouteActivity.getRouteFinishLong()+"&key=AIzaxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx";
         return url;
     }
 
@@ -3737,7 +3498,7 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
 
         String output = "json";
         String url = "https://maps.googleapis.com/maps/api/directions/"
-                + output + "?" + "origin=" + lastLocation.getLatitude() + "," + lastLocation.getLongitude() + "&destination=" + marker.getPosition().latitude + "," + marker.getPosition().longitude + "&key=AIzaSyALyxTBvX1YaD9ZJerQQb_mvnP-OP8xu0E";
+                + output + "?" + "origin=" + lastLocation.getLatitude() + "," + lastLocation.getLongitude() + "&destination=" + marker.getPosition().latitude + "," + marker.getPosition().longitude + "&key=AIzaxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx";
 
         //String url = getMapsApiDirectionsUrl();
         if(isOnline())
@@ -3933,72 +3694,6 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
                 }
 
                 {
-//                    if (mMap != null) {
-//                        clearMap();
-//                    }
-
-//                    if(mMap!=null)
-//                    {
-//                        offlineMapUpdate();
-//                    }
-
-//                    if (mMap != null) {
-//
-//                        mMap.clear();
-//                        List<HashMap<String, String>> path = routes.get(0);
-//                        HashMap<String, String> point = path.get(0);
-//                        double lat = Double.parseDouble(point.get("lat"));
-//                        double lng = Double.parseDouble(point.get("lng"));
-//                        LatLng positionStart = new LatLng(lat, lng);
-//                        //LatLng positionStart0 = new LatLng(lat, lng+0.0000001);
-////                        LatLng positionStart1 = new LatLng(lat+0.000001, lng+0.000001);
-////                        LatLng positionStart2 = new LatLng(lat+0.000001, lng-0.000001);
-////                        LatLng positionStart3 = new LatLng(lat-0.000001, lng-0.000001);
-////                        LatLng positionStart4 = new LatLng(lat-0.000001, lng+0.000001);
-////                        LatLng positionStart5 = new LatLng(lat+0.000001, lng+0.000001);
-//
-//                        double radius= 1565430.3392 * Math.cos(lat * Math.PI / 180) / Math.pow(2, mMap.getCameraPosition().zoom);
-//                        //Toast.makeText(MainActivity.this,String.valueOf(f),Toast.LENGTH_SHORT).show();
-//                        //LatLng positionFinish = new LatLng(lat, lng+0.000001);
-//                        Circle circle = mMap.addCircle(new CircleOptions()
-//                                .center(positionStart)
-//                                .radius(radius)
-//                                .fillColor(Color.DKGRAY)
-//                                .strokeColor(Color.GRAY)
-//                                .strokeWidth(10));
-////                        mMap.addPolygon(new PolygonOptions()
-////                                .add(positionStart1,positionStart2,positionStart3,positionStart4,positionStart5)
-////                                .strokeColor(Color.DKGRAY)
-////                                .fillColor(Color.GRAY))
-////                                .setStrokeWidth(100);
-//                       // mMap.addMarker(new MarkerOptions().icon(BitmapDescriptorFactory.fromResource(R.drawable.positiondot)).position(positionStart).flat(true)).setAnchor(0.5f,0.5f);
-//                        mMap.addPolyline(polyLineOptions);
-//// ArrayList<LatLng> pointstart = null;
-////                        PolylineOptions polyLineOption = null;
-////                        pointstart = new ArrayList<LatLng>();
-////                        polyLineOption = new PolylineOptions();
-////                        pointstart.add(positionStart);
-////                        pointstart.add(positionFinish);
-////                        polyLineOption.width(100);
-////                        polyLineOption.color(Color.DKGRAY);
-////                        polyLineOption.addAll(pointstart);
-//
-//                        //mMap.addPolyline(polyLineOption);
-//
-//
-//
-//                        if(mMarkerOptArray!=null) {
-//                            //Toast.makeText(MainActivity.this,"size:"+String.valueOf(mMarkerOptArray.size()),Toast.LENGTH_LONG).show();
-//
-//                            for (MarkerOptions markeropt : mMarkerOptArray) {
-//
-//                                updateMap(markeropt);
-//                                // markeropt.setVisible(false);
-//                                //Marker marker =  mMap.addMarker(markeropt);
-//                                //marker.remove(); //<-- works too!
-//                            }
-//                        }
-//                    }
 
 
 
@@ -4014,135 +3709,7 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
     }
 
 
-//    public static boolean pingURL(String hostname, int port) throws UnknownHostException, IOException {
-//        boolean reachable = false;
-//
-//        try (Socket socket = new Socket(hostname, port)) {
-//            reachable = true;
-//        }
-//
-//        return reachable;
-//    }
 
-//    private class MyLocationListener implements LocationListener {
-//
-//
-//        TextView chronotext;// = (TextView) findViewById(R.id.chronometertext);
-//
-//
-//        @Override
-//        public void onLocationChanged(Location location) {
-//            if(mMap!=null) {
-//            //Toast.makeText(MainActivity.this, String.valueOf(mMap.getCameraPosition().zoom), Toast.LENGTH_SHORT).show();
-//            lastLocation=location;
-//            //updateUI();
-//            CameraUpdate center = CameraUpdateFactory.newLatLng(new LatLng(location.getLatitude(), location.getLongitude()));
-//            //CameraUpdate zoom = CameraUpdateFactory.zoomTo(17);
-//
-//
-//
-//                mMap.moveCamera(center);
-//                //mMap.animateCamera(zoom);
-//            }
-//
-//            // Initialize the location fields
-//            //latitude.setText("Latitude: "+String.valueOf(location.getLatitude()));
-//            //longitude.setText("Longitude: "+String.valueOf(location.getLongitude()));
-//
-//
-//            //mMap.animateCamera(CameraUpdateFactory.newLatLngZoom(new LatLng(RouteActivity.getRouteStartLat(), RouteActivity.getRouteStartLong()), 16));
-//
-//            //  if (distance2<40) {
-//
-//            //    int gettmr=timerstop;
-//
-//            //timerstop=(minutes*60*1000)+ (seconds*1000) +millis;
-//
-//            //final ParseQuery query2 = new ParseQuery("TestRoute");
-//
-//            //obj.put("gr_nametime",RouteActivity.getRouteName()+","+timerstop);
-//            // obj.saveInBackground();
-//
-//            //RouteActivity.getSelectedObjectId()
-//
-//                    /*
-//                    Parse update
-//
-//                    if(timerstop<RouteActivity.getRouteTime()) {
-//
-//                        final ParseQuery<ParseObject> querys = ParseQuery.getQuery("TestRoute");
-//
-//                        //if (timerstop<RouteActivity.getRouteTime()) {
-//                        //"xGQqRimgAo"
-//                        querys.orderByAscending("gr_nametime");
-//                        querys.getInBackground(objid, new GetCallback<ParseObject>() {
-//                            public void done(ParseObject gameScore, ParseException e) {
-//                                if (e == null) {
-//                                    // Now let's update it with some new data. In this case, only cheatMode and score
-//                                    // will get sent to the Parse Cloud. playerName hasn't changed.
-//                                    gameScore.put("gr_records", timerstop);
-//                                    //gameScore.put("cheatMode", true);
-//                                    gameScore.saveInBackground();
-//                                }
-//                            }
-//                        });
-//                        /////////////Its A NEW RECORD!!!//////
-//                        //timeindialog.setText(String.valueOf(gettmr));
-//                        showDialog();
-//
-//                    }
-//                    else{
-//                        //timeindialog.setText(String.valueOf(gettmr));
-//                        showDialog();
-//                    }
-//                    */
-//
-//
-//            //update record
-//            //NumberFormat counts000 = new DecimalFormat("000");
-//            //NumberFormat counts00 = new DecimalFormat("00");
-//
-//            //int count1=timerstop/60000;
-//            //int count2=(timerstop-count1*60000)/1000;
-//            //int count3=(timerstop-(count1 * 60000 + count2 * 1000));
-//            //textRecord.setText(RouteActivity.getRouteName()+"     Route Record: "+count1+":"+counts00.format(count2)+":"+counts000.format(count3));
-//            ////////////////////////////////////////////////////////////////////////////////
-//
-//            // }
-//
-//            // Toast.makeText(MainMap.this,  "Location changed",Toast.LENGTH_SHORT).show();
-//
-//        }
-//
-//        //button1.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
-//
-////        @Override
-////        public void onMapReadyCallback(GoogleMap map) {
-////
-////            //toast("Map ready");
-////
-////        }
-//
-//
-//        @Override
-//        public void onStatusChanged(String provider, int status, Bundle extras) {
-//            //Toast.makeText(MainMap.this, provider + "'s status changed to "+status +"!",
-//            // Toast.LENGTH_SHORT).show();
-//        }
-//
-//        @Override
-//        public void onProviderEnabled(String provider) {
-//            //Toast.makeText(MainMap.this, "Provider " + provider + " enabled!",
-//            //   Toast.LENGTH_SHORT).show();
-//
-//        }
-//
-//        @Override
-//        public void onProviderDisabled(String provider) {
-//            //  Toast.makeText(MainMap.this, "Provider " + provider + " disabled!",
-//            //   Toast.LENGTH_SHORT).show();
-//        }
-//    }
 
     public boolean isOnline() {
         //gia ckeck an yparxei internet//
@@ -4235,9 +3802,9 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
             JSONParser jParser = new JSONParser();
 
             // Getting JSON from URL
-            //JSONObject json = jParser.getJSONFromUrl("https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=" +String.valueOf(searchlat)+"," +String.valueOf(searchlong) +"&language=en&radius=500&type=bar&key=AIzaSyA3XkgTBsNJEt3mHaU4-M1-Bvf6ILwgZhU");
-            //JSONObject json = jParser.getJSONFromUrl("https://maps.googleapis.com/maps/api/geocode/json?latlng="+args[0]+"," +args[1] +"&language=en&key=AIzaSyDXbM60rO_aAfK1edCJAmNdGQgDwypIe3I");
-            JSONObject json = jParser.getJSONFromUrl("https://roads.googleapis.com/v1/snapToRoads?path=" + lastLocation.getLatitude() + "," + lastLocation.getLongitude() + "&key=AIzaSyDxJRcGtZAQXJgDUD5TiGZts4Y1SwWyY5M");
+           
+            //JSONObject json = jParser.getJSONFromUrl("https://maps.googleapis.com/maps/api/geocode/json?latlng="+args[0]+"," +args[1] +"&language=en;
+            JSONObject json = jParser.getJSONFromUrl("https://roads.googleapis.com/v1/snapToRoads?path=" + lastLocation.getLatitude() + "," + lastLocation.getLongitude() + "&key=AIzaxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx);
             //lat //long
             return json;
             ////////////////////////////////////////////////////////////
@@ -4298,44 +3865,8 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
                     //JSONObject snapLong=objectcity.getJSONObject("longitude");
                     //Toast.makeText(MainActivity.this,String.valueOf(snapLat),Toast.LENGTH_LONG).show();
 
-/////////////////////////////////////////////////////////////////////////////////////////////////////
-//                for(int n=0;n<objectcity.length();n++){
-//                    JSONObject obcity=objectcity.getJSONObject(n);
-//                    JSONObject obstreet=objectcity.getJSONObject(n);
-//
-//
-////                    if(obcity.toString().contains("administrative_area_level_3")){
-////                        String city= obcity.getString("long_name").toString();
-////                    }
-//
-//
-//
-//
-//
-////                    if(obstreet.toString().contains("route")){
-////                        {
-////
-////                            String streetOb= obstreet.getString("short_name").toString();
-////                            streetNameAsync=streetOb;
-////                            if(streetNameAsync.contains("\""))
-////                            {streetNameAsync.replace("\"","");}
-////                        }
-////                    }
-//
-//                }
-//////////////////////////////////////////////////////////////////////////////////
-                    // JSONObject obcity=objectcity.getJSONObject(5);
-                    //JSONObject obstreet=objectcity.getJSONObject(1);
-//                if(ob!=null) {
-//                    String[] addres = ob.getString("formatted_address").split(",");
-//                    // String city= obcity.getString("long_name").toString();
-////                if (streetName != null) {
-////                    textc.setText(streetName);
-////                }
-////                if (cityName != null) {
-////                    txcirccity.setText(cityName);
-////                }
-//                }
+
+
 
 
                 }
@@ -4400,10 +3931,10 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
 
 
             // Getting JSON from URL
-            //JSONObject json = jParser.getJSONFromUrl("https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=" +String.valueOf(searchlat)+"," +String.valueOf(searchlong) +"&language=en&radius=500&type=bar&key=AIzaSyA3XkgTBsNJEt3mHaU4-M1-Bvf6ILwgZhU");
-            //JSONObject json = jParser.getJSONFromUrl("https://maps.googleapis.com/maps/api/geocode/json?latlng="+args[0]+"," +args[1] +"&language=en&key=AIzaSyDXbM60rO_aAfK1edCJAmNdGQgDwypIe3I");
+            //JSONObject json = jParser.getJSONFromUrl("https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=" +String.valueOf(searchlat)+"," +String.valueOf(searchlong) +"&language=en&radius=500&type=bar&key=");
+            //JSONObject json = jParser.getJSONFromUrl("https://maps.googleapis.com/maps/api/geocode/json?latlng="+args[0]+"," +args[1] +"&language=en&key=AIzaxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx");
             //+ String.valueOf(latcam) + "," + String.valueOf(lngcam) +
-            JSONObject json = jParser.getJSONFromUrl("https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=" + String.valueOf(lastLocation.getLatitude()) + "," + String.valueOf(lastLocation.getLongitude()) + "&radius=20000&type=parking&key=AIzaSyBAKvmOCR4e1tFA1E8PiKlKqSdAOki1cks");
+            JSONObject json = jParser.getJSONFromUrl("https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=" + String.valueOf(lastLocation.getLatitude()) + "," + String.valueOf(lastLocation.getLongitude()) + "&radius=20000&type=parking&key=AIzaxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx");
             //lat //long
             return json;
             ////////////////////////////////////////////////////////////
@@ -4484,9 +4015,8 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
             JSONParser jParser = new JSONParser();
 
             // Getting JSON from URL
-            //JSONObject json = jParser.getJSONFromUrl("https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=" +String.valueOf(searchlat)+"," +String.valueOf(searchlong) +"&language=en&radius=500&type=bar&key=AIzaSyA3XkgTBsNJEt3mHaU4-M1-Bvf6ILwgZhU");
-            //JSONObject json = jParser.getJSONFromUrl("https://maps.googleapis.com/maps/api/geocode/json?latlng="+args[0]+"," +args[1] +"&language=en&key=AIzaSyDXbM60rO_aAfK1edCJAmNdGQgDwypIe3I");
-            JSONObject json = jParser.getJSONFromUrl("https://roads.googleapis.com/v1/snapToRoads?path=" + lastLocation.getLatitude() + "," + lastLocation.getLongitude() + "&key=AIzaSyDxJRcGtZAQXJgDUD5TiGZts4Y1SwWyY5M");
+   
+            JSONObject json = jParser.getJSONFromUrl("https://roads.googleapis.com/v1/snapToRoads?path=" + lastLocation.getLatitude() + "," + lastLocation.getLongitude() + "&key=AIzaxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx");
             //lat //long
             return json;
             ////////////////////////////////////////////////////////////
@@ -4546,48 +4076,9 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
                         }
                     });
 
-///////////////////////////////////////////////////////////////////////////////////
-                    //JSONObject snapLong=objectcity.getJSONObject("longitude");
-                    //Toast.makeText(MainActivity.this,String.valueOf(snapLat),Toast.LENGTH_LONG).show();
 
-/////////////////////////////////////////////////////////////////////////////////////////////////////
-//                for(int n=0;n<objectcity.length();n++){
-//                    JSONObject obcity=objectcity.getJSONObject(n);
-//                    JSONObject obstreet=objectcity.getJSONObject(n);
-//
-//
-////                    if(obcity.toString().contains("administrative_area_level_3")){
-////                        String city= obcity.getString("long_name").toString();
-////                    }
-//
-//
-//
-//
-//
-////                    if(obstreet.toString().contains("route")){
-////                        {
-////
-////                            String streetOb= obstreet.getString("short_name").toString();
-////                            streetNameAsync=streetOb;
-////                            if(streetNameAsync.contains("\""))
-////                            {streetNameAsync.replace("\"","");}
-////                        }
-////                    }
-//
-//                }
-//////////////////////////////////////////////////////////////////////////////////
-                    // JSONObject obcity=objectcity.getJSONObject(5);
-                    //JSONObject obstreet=objectcity.getJSONObject(1);
-//                if(ob!=null) {
-//                    String[] addres = ob.getString("formatted_address").split(",");
-//                    // String city= obcity.getString("long_name").toString();
-////                if (streetName != null) {
-////                    textc.setText(streetName);
-////                }
-////                if (cityName != null) {
-////                    txcirccity.setText(cityName);
-////                }
-//                }
+
+
 
 
                 }
@@ -4813,7 +4304,7 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
         File root = android.os.Environment.getExternalStorageDirectory();
         //tv.append("\nExternal file system root: "+root);
 
-        // See http://stackoverflow.com/questions/3551821/android-write-to-sd-card-folder
+        
 
         File dir = new File (root.getAbsolutePath() + "/external_storage_dir/vs");
         dir.mkdirs();
