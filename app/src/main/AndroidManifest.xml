@@ -95,7 +95,7 @@
             android:value="@integer/google_play_services_version" />
         <meta-data
             android:name="com.google.android.geo.API_KEY"
-            android:value="AIzaSyBAKvmOCR4e1tFA1E8PiKlKqSdAOki1cks" />
+            android:value="AIzaxxxxxxxxxxxxxxxxxxxxxxxxxxxxx" />
 
         <activity
             android:name=".NoInternetActivity"
